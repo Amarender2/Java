@@ -1,0 +1,35 @@
+Lambda expressions is to make instances of anonymous class easier to read and write !
+
+What is the type of Lambda expression ?
+Functional Interface : A interface with only one abstract method, Example: Comparator (compare), Runnable (run)
+
+Can be annotated (Optional), @FunctionalInterface, java 8
+Compiler will tell if interface is functional or not
+
+Lambdas are created without a new operator
+Lambda is an object without an identity
+
+java.util.function package
+new 43 functional interfaces
+
+Supplier - Doesn't take any object and provides new object
+Consumer/BiConsumer (takes two objects) - Consumes a object doesn't return anything , ex: system out
+Predicate/BiPredicate (takes two objects) - Takes a object and returns a boolean
+Function/BiFunction (takes two objects) - Takes one object and returns another object
+
+Function - UnaryOperator
+BiFunction - BinaryOperator
+
+Method References
+----------------------------------------------------
+
+f = person -> person.getAge();
+or
+f = Person::getAge;
+
+
+Adding foreach to Iterable interface without breaking code
+so made foreach default method in interface
+Default Method: Allows to change the old interfaces without breaking the existing implementations, Allows new patterns too.
+Static methods also allowed.
+
